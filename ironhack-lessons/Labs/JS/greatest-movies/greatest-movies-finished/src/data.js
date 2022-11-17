@@ -2000,4 +2000,4 @@ const movies = [
     genre: ['Comedy', 'Drama'],
     score: 8
   }
-];
+]; 

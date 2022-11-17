@@ -9,7 +9,7 @@ function maxOfTwoNumbers(num1, num2) {
   //   console.log(`In this case the bigger number is number 2 which is: ${num2}`);
   // }
   // Version #2
-  // return Math.max(num1, num2);
+  return Math.max(num1, num2);
 }
 console.log("Iteration #1 - Max of two numbers:");
 maxOfTwoNumbers(8, 10);
@@ -84,7 +84,6 @@ console.log("Version 001");
 function sumNumbers(numbers) {
   // decalrar variable para guardar el total de la suma
   let sum = 0;
-  // Iteramos en base al paramtero que apuntaremos - casualmente tmabien es numbers como nomenclatura
   for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
   }
@@ -124,31 +123,31 @@ console.log("-------------------");
 console.log(`- Iteration 3.2 - "`);
 // Iteration #3.1 Bonus:
 const mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
-function sum(array) {
-  let mixedSum = 0;
+// function sum(array) {
+//   let mixedSum = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    if (typeof array[i] === "string") {
-      str = array[i].split("");
-      for (let i = 0; i < str.length; i++) {
-        mixedSum += str[i].length;
-      }
-    } else if (array[i] === true) {
-      mixedSum += 1;
-    } else {
-      mixedSum += array[i];
-    }
-  }
-  return mixedSum;
-}
-console.log(
-  `Version 001 - La suma de este array generico es de un total de: ${sum(
-    mixedArr
-  )}`
-);
+//   for (let i = 0; i < array.length; i++) {
+//     if (typeof array[i] === "string") {
+//       str = array[i].split("");
+//       for (let i = 0; i < str.length; i++) {
+//         mixedSum += str[i].length;
+//       }
+//     } else if (array[i] === true) {
+//       mixedSum += 1;
+//     } else {
+//       mixedSum += array[i];
+//     }
+//   }
+//   return mixedSum;
+// }
+// console.log(
+//   `Version 001 - La suma de este array generico es de un total de: ${sum(
+//     mixedArr
+//   )}`
+// );
 
 console.log("Version 002");
-function sum2(mixedArr) {
+function sum(mixedArr) {
   if (mixedArr.length === 0) return 0;
 
   let result = 0;
@@ -159,7 +158,7 @@ function sum2(mixedArr) {
       result += element.length;
     } else if (element === true) {
       result += 1;
-    } else if (typeof element === "object") {
+    } else if (typeof mixedArr[i] === "object") {
       throw new Error("Yo yo my man, cant add an object to this sum");
     } else {
       result += mixedArr[i];
@@ -175,14 +174,14 @@ console.log(
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2.4, 6.6, 9.6, 10.9, 7, 4.4, 1.55, 9];
-console.log("Version 001");
+// const numbersAvg = [2.4, 6.6, 9.6, 10.9, 7, 4.4, 1.55, 9];
+// console.log("Version 001");
+// function averageNumbers(numbersAvg) {
+//   return (sumNumbers(numbersAvg) / numbersAvg.length).toFixed(2);
+// }
+// console.log(`El average de este array es: ${averageNumbers(numbersAvg)}`);
+// console.log("Version 002");
 function averageNumbers(numbersAvg) {
-  return (sumNumbers(numbersAvg) / numbersAvg.length).toFixed(2);
-}
-console.log(`El average de este array es: ${averageNumbers(numbersAvg)}`);
-console.log("Version 002");
-function averageNumbers2(numbersAvg) {
   if (numbersAvg.length === 0) return null;
   if (numbersAvg.length === 1) return numbersAvg[0];
 
@@ -190,7 +189,7 @@ function averageNumbers2(numbersAvg) {
   for (let i = 0; i < numbersAvg.length; i++) {
     total += numbersAvg[i];
   }
-  return (total / numbersAvg.length).toFixed(2);
+  return total / numbersAvg.length;
 }
 console.log(`El average de este array es: ${averageNumbers2(numbersAvg)}`);
 // Level 2: Array of strings
@@ -254,7 +253,15 @@ const wordsUnique = [
   "bring",
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  if (wordsUnique.length > 0) {
+    let singleWords = wordsUnique.filter((item, index) => wordsUnique.indexOf(item) === index);
+  return singleWords;
+  } else {
+    return null;
+  }
+  
+}
 
 // Iteration #6: Find elements
 const wordsFind = [
@@ -268,7 +275,19 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind, search) {
+  if (wordsFind.length > 0) {
+    for (let i = 0; i < wordsFind.length; i++) {
+        if (wordsFind[i] === search) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+  } else {
+    return null;
+  }
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -285,7 +304,18 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsArray, wordToSearch) {
+  let count = 0;
+  if (wordsArray.length > 0) {
+    for (let i = 0; i < wordsArray.length; i++) {
+      if (wordsArray[i] === wordToSearch) {
+        count++;
+      }
+    }
+  } else {
+    count = 0;
+  } return count;
+}
 
 // Iteration #8: Bonus
 const matrix = [
