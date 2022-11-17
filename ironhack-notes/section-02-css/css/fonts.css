@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+body {
+    font-family: 'Kolker Brush', cursive;;
+}
+
+h2 {
+    color: rgb(15, 77, 56);
+    font-size: 180px;
+    text-shadow: 1px 1px 2px rgb(108, 44, 55);
+}
+p {
+    font-size: 150px;
+    text-shadow: 1px 1px 2px rgb(108, 44, 55);
+}

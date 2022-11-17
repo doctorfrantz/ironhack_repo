@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border-collapse: unset;
+            border-spacing: 0;
+        }
+        img {
+            max-width: 200px;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        th {
+            background-color: #127485;
+            color: white;
+        }
+        table {
+            border: none;
+            text-align: center;
+        }
+        #tableMain{
+            font-size: 40px;
+            color: rgb(43, 40, 37);
+            box-shadow: 5px 10px #888888;
+        }
+        #sushi {
+            color: red;
+        }
+        #pi {
+            color: green;
+        }
+        #zz {
+            color: white;
+        }
+        #a {
+            color: red;
+        }
+        .country {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #japan {
+            background-image: url("https://img5.goodfon.com/wallpaper/nbig/b/e8/japan-flag-flag-of-japan-japanese-flag-japan-large-flag.jpg");
+        }
+        #mexico {
+            background-image: url("https://cdn.britannica.com/73/2573-004-29818847/Flag-Mexico.jpg");
+        }
+        .italy {
+            background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png");
+        }
+        #france {
+            background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/800px-Flag_of_France.svg.png");
+        }
+
+
+    </style>
+</head>
+<body>
+
+</html>
+<table>
+    <tr>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Children of Bodom</td>
+        <td>Metal</td>
+        <td>Finland</td>
+    </tr>
+    <tr>
+        <td>Red Hot Chilly Peppers</td>
+        <td>Rock</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+        <td>Metallica</td>
+        <td>Metal</td>
+        <td>USA</td>
+    </tr>
+</table>
+<h2>Table Example 2</h2>
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td>09:00 - 21:00</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td>12:00 - 00:00</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+    <h3>Table Example 3</h3>
+    <!-- nombre imagen ubicación y rating del 1 al 4 -->
+    <table id="tableMain">
+        <tr class="tableRow">
+            <th class="tableHead">Plate</th>
+            <th class="tableHead">Image</th>
+            <th class="tableHead">Country</th>
+            <th class="tableHead">Rating</th>
+        </tr>
+        <tr class="tableRow">
+            <td>Tacos</td>
+            <td><img src="https://ep01.epimg.net/elcomidista/imagenes/2022/01/11/receta/1641893642_902475_1641893828_noticia_normal.jpg" alt="Tacos image"></td>
+            <td id="mexico" class="country">Mexico</td>
+            <td>***</td>
+        </tr>
+        <tr class="tableRow">
+            <td id="sushi">Sushi</td>
+            <td><img src="https://media.timeout.com/images/103774181/750/422/image.jpg" alt="sushi image"></td>
+            <td id="japan" class="country">Japan</td>
+            <td>****</td>
+        </tr>
+        <tr class="tableRow">
+            <td><span id="pi">Pi</span><span id="zz">zz</span><span>a</span></td>
+            <td><img src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2022/10/20/pizza.jpeg" alt="pizza 1 image"></td>
+            <td class="country italy">Italy</td>
+            <td>***</td>
+        </tr>
+        <tr class="tableRow">
+            <td>More Pizza</td>
+            <td><img src="https://static3.diariosur.es/www/multimedia/202102/06/media/cortadas/pizza-plato-ksnH-U130438465911euG-1248x770@Diario%20Sur.jpg" alt="pizza 2 image"></td>
+            <td class="country italy">Italy</td>
+            <td>***</td>
+        </tr>
+        <tr class="tableRow">
+            <td>Nutella Crêps</td>
+            <td><img src="https://www.recetassinlactosa.com/wp-content/uploads/2014/12/Crepes-de-nutella-y-coco.jpg" alt="nutella creps image"></td>
+            <td class="country" id="france">France</td>
+            <td>****</td>
+        </tr>
+    </table>
+</body>
+

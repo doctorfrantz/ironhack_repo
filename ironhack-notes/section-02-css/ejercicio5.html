@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Exercises</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: black;
+            text-align: center;
+        }
+
+        .fakeimg {
+            width: 400px;
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+        }
+        /* Large devices (desktops, less than 1200px) */
+        @media (max-width: 1199.98px) {
+            body {
+                background-color: #C5FFFD;
+            }
+            h1 {
+                color: #FCBCB8;
+            }
+            p {
+                color: #8B8BAE;
+            }
+            .fakeimg {
+                background-image: url("https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/17fa9b2a07055c027218726a6696e19d~c5_720x720.jpeg?x-expires=1668189600&x-signature=RZAu%2FiWKBfglVnkxyiOOUzS6ypM%3D");
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
+            body {
+                background-color: #88D9E6;
+            }
+            h1 {
+                color: #FFD972;
+            }
+            p {
+                color: #1b1bba;
+            }
+            .fakeimg {
+                background-image: url("https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c36d399dad4f103bb84b07ec61eab11b~c5_720x720.jpeg?x-expires=1668189600&x-signature=dPeTcWVK1b9v8VFmPdysaPgwuVA%3D");
+            }
+        }
+
+        /* Small devices (landscape phones, less than 768px) */
+        @media (max-width: 767.98px) {
+            body {
+                background-color: #8B8BAE;
+            }
+            h1 {
+                color: #B9314F;
+            }
+            p {
+                color: #a6c345;
+            }
+            .fakeimg {
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwTIELLaKE2WQnSK_T0X1ekLUq5MQtfQjpqFhkgNZi5Sy2Z_jG3yq_JKnAPV0IQxCy6ic&usqp=CAU");
+            }
+        }
+
+        /* X-Small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            body {
+                background-color: #526760;
+            }
+            h1 {
+                color: #6D676E;
+            }
+            p {
+                color: #a97419;
+            }
+            .fakeimg {
+                background-image: url("https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/ebb7784e0985e6b9524df9cc575103af.jpeg?x-expires=1668189600&x-signature=r%2F2jAOCMaali5s%2BVbTPICavLg14%3D");
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos minima soluta repudiandae itaque explicabo voluptate harum ipsa fugiat sint.</p>
+        <div class="fakeimg"></div>
+    </main>
+</body>
+</html>

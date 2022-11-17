@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* styles of body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            position: relative;
+        }
+
+        /* note section */
+        .note {
+            background: yellow;
+            padding: 4px;
+        }
+        .note h4 {
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #345432;
+            color: white;
+        }
+        /* navigation bar */
+        .navbar {
+            display: flex;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* main content */
+        /* Nos creamos dos columans que esten una al lado de la otra */
+
+        /* side-column */
+        .side {
+            flex: 30%;
+            background: #f1f1f1;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main {
+            flex: 70%;
+            background: white;
+            padding: 20px;
+        }
+        .fakeimg {
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+            height: 200px;
+        }
+        .fakeimg-2 {
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+            height: 60px;
+        }
+
+        /* footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* MEDIA QUERY */
+        /* responsive layour que se accione cuando la pantalla este por debajo de 700px de anchura, vamos a hacer que las columnas que estan dentro del main se stackeen encima de la otra */
+
+        @media(max-width: 700px){
+            .row, 
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Note -->
+    <div class="note">
+        <h4>avaeva</h4>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1></h1>
+        <p></p>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+    </div>
+    <!-- Main content -->
+    <div class="row">
+        <!-- Side content -->
+        <div class="side">
+            <h2></h2>
+            <div class="fakeimg">Image</div>
+            <p>Some text about my cool self and the wu tang clan</p>
+            <h3>More Text</h3>
+            <p>My pictures</p>
+            <img class="fakeimg-2" src="" alt="">
+            <br>
+            <img class="fakeimg-2" src="" alt="">
+            <br>
+            <img class="fakeimg-2" src="" alt="">
+            <br>
+        </div>
+        <div class="main">
+            <h2>Title Heading</h2>
+            <h5>Title description</h5>
+            <div class="fakeimg"></div>
+            <p>Some text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae adipisci doloremque hic dicta, est modi eaque atque doloribus harum amet accusantium consequuntur saepe ab earum distinctio, odit aut. Provident!</p>
+            <br>
+            <h2>Title heading</h2>
+            <h5>Title description</h5>
+            <div class="fakeimg"></div>
+            <p>Some text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae adipisci doloremque hic dicta, est modi eaque atque doloribus harum amet accusantium consequuntur saepe ab earum distinctio, odit aut. Provident!</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

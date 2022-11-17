@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar main aside";
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+a {
+    text-decoration: none;
+}
+/* GRID */
+.side-menu {
+    grid-area: sidebar;
+    background-color: white;
+    border: 0.5px solid rgb(159, 159, 159);
+}
+
+.main {
+    grid-area:  main;
+}
+.sidebar {
+    grid-area: aside;
+}
+/* SIDEMENU */
+.side-element {
+    display: flex;
+    align-items: center;
+    margin: 2.5vw 0 0 0;
+}
+.side-element p {
+    color: black;
+}
+.instagram-logo {
+    width: 7vh;
+    margin: 2vw;
+}
+
+.side-img {
+    width: 3vh;
+    margin: 0 1vw 0 2vw;
+}
+/* MAIN */
+.main {
+    margin: 0 0 0 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+/* HEADER */
+.header {
+    display: flex;
+    background-color: white;
+    border: 0.5px solid rgb(159, 159, 159);
+    border-radius: 5px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.profile-pic-nav {
+    width: 5vh;
+}
+/* POST */
+.post {
+    margin: 0 0 0 0;
+}
+/* POST HEADER */
+.post-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: 0.5px solid rgb(159, 159, 159);
+    border-radius: 5px;
+}
+.post-img {
+    width: 100%;
+}
+.post-icon {
+    width: 10vh;
+}
+
+/* ASIDE */
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+.suggestion-item {
+    display: flex;
+    flex-direction: row;
+}
+.suggestion-item img {
+    width: 5vh;
+    height: 5vh;
+}
+.follow {
+    color: rgb(77, 124, 178);
+}

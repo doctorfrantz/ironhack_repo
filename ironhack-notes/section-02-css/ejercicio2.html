@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercises</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob" min="1900-01-01">
+        </div>
+        <div>
+            <label for="edad">Age: </label>
+            <input type="number" name="edad" id="edad" min="8" max="99" placeholder="Enter your age">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass" min="10" max="16" maxlength="16" placeholder="Enter your password" >
+        </div>
+        <div>
+            <label for="cardNum">Card Number: </label>
+            <input type="text" name="cardNum" id="cardNum" min="16" max="16" maxlength="16" placeholder="Enter your Card Number">
+        </div>
+        <div>
+            <label for="color">Favorite Color: </label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="adress">Adress: </label>
+            <input type="text" name="adress" id="adress" placeholder="Enter your Adress">
+        </div>
+        <div>
+            <label for="files">Additional files: </label>
+            <input type="file" name="files" id="files" max="1">
+        </div>
+        <div>
+            <input type="submit" value="Submit" onclick="msg();">
+        </div>
+        <script>
+        
+          function msg() {
+              let name = document.querySelector("#name").value;
+              let dob = document.querySelector("#dob").value;
+              let edad = document.querySelector("#edad").value;
+              let email = document.querySelector("#email").value;
+              let adress = document.querySelector("#adress").value;
+              let color = document.querySelector("#color").value;
+              alert(`Your name is: ${name}, your birth is on ${dob}, you are ${edad} years old, your favorite color is ${color}, your email is ${email} and your address is ${adress}`);
+          }
+             
+          </script>
+        <!-- Nombre, fechanacimiento, edad, email, pass (16 char), cardnumber (16),colorFavorito,dirección,file(select) -->
+    </form>
+    
+</body>
+</html>

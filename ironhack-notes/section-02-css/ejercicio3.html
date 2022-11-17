@@ -1,0 +1,67 @@
+<!-- un contenedor padre y dentro 4 cajitas
+a cada caja le damos un width y un height y poner los 4 animales favoritos con imagen con css
+poner los 4 animales en la esquina de cada caja -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Animals</title>
+    <style>
+        body div {
+            background-image: url("https://www.collinsdictionary.com/images/full/savanna_374900980.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 50vw;
+            height: 50vw;
+            position: relative;
+        }
+        body div div {
+            width: 24vh;
+            height: 24vh;
+        }
+        
+        body div div:nth-child(1) {
+            background-image: url("https://i.guim.co.uk/img/media/39669fd0fa5c0193955cba565e89aa1f29cec180/0_1063_3511_2105/master/3511.jpg?width=700&quality=85&auto=format&fit=max&s=280d8adf27f5028f84d01e4b284ff80a");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        body div div:nth-child(2) {
+            background-image: url("https://www.mundo-geo.es/uploads/s1/10/32/90/85/la-ameba-contiene-estructuras-especializadas-llamadas-organulos-que-realizan-una-variedad-de-funciones-celulares.jpeg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        body div div:nth-child(3) {
+            background-image: url("https://i.pinimg.com/originals/de/d2/c7/ded2c700aa8a6a601412b058356127b8.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        body div div:nth-child(4){
+            background-image: url("https://i.blogs.es/3caf25/alien-covenant/840_560.jpeg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

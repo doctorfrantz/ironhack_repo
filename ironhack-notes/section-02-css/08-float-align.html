@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Align</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 80%;
+            margin: 30px;
+        }
+        .box {
+            background: #f4f4f4;
+            border: solid 1px #000;
+            padding: 20px;
+            margin: 0 0 10px 0;
+        }
+        .box p {
+            text-align: justify;
+        }
+
+        .clear {
+            clear: both;
+        }
+        #box-2 {
+            float: left;
+            width: 70%;
+        }
+        #box-3 {
+            float: left;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>This is a website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt repellendus id, eum quibusdam eos dignissimos officia est dicta quod. Nulla numquam blanditiis, alias vitae molestiae cum vel quod deserunt quis?</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Blog Posts</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime optio deserunt quibusdam impedit voluptatem explicabo saepe totam ipsum dolor, maiores, rem possimus sed ullam doloribus. Blanditiis molestias repellat consectetur temporibus?</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>Projects</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, obcaecati sint praesentium quod excepturi repellendus nostrum ad autem aperiam unde doloribus ea odit a voluptates libero voluptate, distinctio ullam quo?</p>
+        </div>
+        <div class="clear"></div>
+        <div class="box" id="box-4">
+            <h3>Footer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod labore placeat beatae. Suscipit atque sunt repellendus ad architecto, quis, minima velit deleniti sint eaque ex, cumque quo. Blanditiis, sed ratione!</p>
+        </div>
+    </div>
+</body>
+</html>

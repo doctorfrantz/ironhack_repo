@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- don't forget to link your styles -->
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="javascript-example">
+      <img src="/images/spotify-logo.png" alt="Spotify Logo">
+      <nav class="navbar">
+        <a href="#" class="navbar-link">Premium</a>
+        <a href="#" class="navbar-link">Discover</a>
+        <a href="#" class="navbar-link">Help</a>
+        <a href="#" class="navbar-link">Download</a>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <section>
+      <div class="hero">
+        <h1>Music for everyone.</h1>
+        <p class="hero-description">Spotify is now free on mobile, tablet and computer.<br> Listen to the right music, wherever you are.</p>
+      </div>
+    </section>
+    <!-- INFO -->
+    <section class="info">
+      <h2>What’s on Spotify?</h2>
+      <div class="items-info">
+        <div class="item">
+          <img src="/images/music-icon.png" alt="Music Icon">
+          <h5>Millions of Songs</h5>
+          <p>There are millions of songs on Spotify</p>
+        </div>
+        <div class="item">
+          <img src="/images/high-quality-icon.png" alt="HD Icon">
+          <h5>HD Music</h5>
+          <p>Listen to music as if you were listening live</p>
+        </div>
+        <div class="item">
+          <img src="/images/devices-icon.png" alt="Devices Icon">
+          <h5>Stream Everywhere</h5>
+          <p>Stream music on your smartphone, tablet or computer</p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-nav footer-item">
+        <h2>It’s as yeezy as Kanye West. </h2>
+        <hr>
+        <h5>Search</h5>
+        <p>Know what you want to listen to? Just search and hit play.</p>
+        <h5>Browse</h5>
+        <p>Check out the
+          latest charts, brand new releases and great playlists for right now.</p>
+        <h5>Discover</h5>
+        <p>Enjoy new music every Monday with your
+          own personal playlist. Or sit back and enjoy Radio.</p>
+      </div>
+      <img class="footer-logo footer-item" src="/images/spotify-icon-white.png" alt="Spotify Logo White">
+      <img class="footer-app-img footer-item" src="/images/spotify-app.jpg" alt="Spotify App">
+    </footer>
+
+    <script>
+      const changeHeaderColor = document.querySelector(".javascript-example");
+      
+      window.onscroll = function (){
+        const scroll = window.pageYOffset;
+        if (scroll > 600) {
+          changeHeaderColor.classList.add("js-background");
+        } else {
+          changeHeaderColor.classList.remove("js-background");
+        }
+      } 
+    </script> 
+  </body>
+</html>
