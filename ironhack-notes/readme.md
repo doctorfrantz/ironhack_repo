@@ -141,3 +141,15 @@ We started with HTML and Github.
 - `map()``
 - `reduce()`
 - `filter()`
+
+### November 16
+
+- Day mainly focused on DOM manipulation:
+  - Selectors such as `querySelector`, `getElementsByClassName`
+  - Create elements with `appendChild`
+
+### November 17
+
+- We kept working on the LABS
+
+### November 15
