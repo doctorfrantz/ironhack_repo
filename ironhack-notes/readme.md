@@ -153,3 +153,22 @@ We started with HTML and Github.
 - We kept working on the LABS
 
 ### November 15
+
+- Async JS
+- `setTimeout(function, miliseconds)`
+- Callback Functions
+
+- JS Promises
+
+  - `new Promise((resolve, reject) => {})`
+  - Chaining promises
+    - `.then()` to chain resolved promises
+    - `.catch()` to chain rejected promises
+    - `.finally()` executed at the end regardless of the promise final status
+
+- Asynchronous functions
+
+  - `async`
+  - `await`
+
+  - `Try / Catch` error handling
