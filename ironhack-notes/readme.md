@@ -152,7 +152,7 @@ We started with HTML and Github.
 
 - We kept working on the LABS
 
-### November 15
+### November 18
 
 - Async JS
 - `setTimeout(function, miliseconds)`
@@ -172,3 +172,28 @@ We started with HTML and Github.
   - `await`
 
   - `Try / Catch` error handling
+
+### November 21 - November 25
+
+- Mid Term Project Week
+  - Working on creating a clone of [Circle Agency](https://vercel.com/doctorfrantz/ironhack-mid-term-project/deployments)
+  - Applying fetch() methods to get information from an external API, in this case JSONplaceholder
+
+### November 28
+
+- Introduction to frameworks
+
+- Introduction to Vue.js
+  - Components
+  - Composition API
+  - v-bind
+  - events @click
+
+### November 29
+
+- Vue JS
+  - v-if
+  - v-else-if
+  - v-else
+  - v-for
+  - v-show
